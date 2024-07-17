@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  overflow-x: hidden;
+  font-family: var(--ParaFont);
+}
+.outdoorbenefits:hover img{
+  filter: invert(1);
+}
+.outdoorbenefits:hover p{
+  color: #fff;
+}
+@layer base{
+ .light_btn{
+  @apply  bg-LightYellow text-Black shadow-DarkShadow text-center font-HeadFont rounded-lg border-2 border-transparent border-solid py-2 px-2 hover:border-black
+ }
+ .dark_btn{
+  @apply  bg-green-400 text-white shadow-DarkShadow text-center font-HeadFont rounded-lg border-2 border-transparent border-solid py-2 px-2 hover:border-green-400
+ }
+ .section{
+  @apply pt-10 pb-10 pl-5 pr-5
+ }
+ h1{
+  @apply text-7xl text-HeadColor font-semibold font-HeadFont
+ }
+ h2{
+  @apply text-5xl text-HeadColor font-HeadFont font-bold
+ }
+ h3{
+  @apply text-4xl text-HeadColor font-HeadFont font-bold
+ }
+ h4{
+  @apply text-3xl text-HeadColor font-HeadFont font-bold
+ }
+ h5{
+  @apply text-2xl text-HeadColor font-HeadFont font-bold
+ }
+ h6{
+  @apply text-HeadColor font-HeadFont font-bold text-lg
+ }
+ p{
+  @apply text-ParaColor font-ParaFont text-[15px]
+ }
+ .centerdiv{
+  @apply flex items-center justify-center
+ }
+ .centerhead{
+  @apply text-center text-HeadColor font-HeadFont
+ }
+ .lefthead{
+  @apply text-HeadColor font-HeadFont text-left mb-5
+ }
+ .circlebtn{
+  @apply flex items-center justify-center gap-x-2 font-HeadFont font-bold capitalize mt-2
+ }
+ .circledesign{
+  @apply w-8 h-8 rounded-full bg-DarkGreen text-center py-2 px-2
+ }
+}
+
+@media(max-width: 560px){
+  h1{
+    @apply text-3xl text-HeadColor font-semibold font-HeadFont
+   }
+   h2{
+    @apply text-2xl text-HeadColor font-HeadFont font-bold
+   }
+   h3{
+    @apply text-3xl text-HeadColor font-HeadFont font-bold
+   }
+   h4{
+    @apply text-2xl text-HeadColor font-HeadFont font-bold
+   }
+   h5{
+    @apply text-xl text-HeadColor font-HeadFont font-bold
+   }
+   h6{
+    @apply text-lg text-HeadColor font-HeadFont font-bold 
+   }
+}
