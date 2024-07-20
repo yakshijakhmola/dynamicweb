@@ -11,6 +11,8 @@ import IndoorSignage from "./Pages/IndoorSignage";
 import OutdoorSignage from "./Pages/OutdoorSignage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+AOS.init();
 
 const Outletext = () => {
   return (

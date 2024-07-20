@@ -75,7 +75,7 @@ const Contact = () => {
             <div className='section'>
                 <div className="container">
                     <div className='grid grid-cols-12 gap-x-5'>
-                        <div className='xl:col-span-5 md:col-span-5 col-span-12'>
+                        <div className='xl:col-span-5 md:col-span-5 col-span-12'  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                             <div className='bg-Gray py-20 px-10 rounded-lg shadow-DarkShadow h-full'>
                                 <h4 className='mb-3'>Contact Details</h4>
                                 <p>We're here to help! If you have any questions or would like to discuss how our Outdoor Signage & Indoor Signage services can benefit your business.</p>
@@ -96,13 +96,13 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='xl:col-span-7 md:col-span-7 col-span-12'>
+                        <div className='xl:col-span-7 md:col-span-7 col-span-12'  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
                             <div className='bg-white shadow-DarkShadow py-10 px-10 rounded-lg mt-3 xl:mt-0'>
                             <h3 className='mb-5'>Get In Touch</h3>
                                 <form onSubmit={handleSubmit}>
                                     <div>
                                         <input
-                                            className='w-full py-4 px-5 border-2 border-solid border-gray-100 rounded-lg mb-4 bg-gray-50'
+                                            className='w-full py-4 px-5 border-2 border-solid border-[#ddd] text-[#333] rounded-lg mb-4 bg-gray-50'
                                             placeholder='Name*'
                                             type='text'
                                             name='username'
@@ -113,7 +113,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <input
-                                            className='w-full py-4 px-5 border-2 border-solid border-gray-100 rounded-lg mb-4 bg-gray-50'
+                                            className='w-full py-4 px-5 border-2 border-solid border-[#ddd] text-[#333] rounded-lg mb-4 bg-gray-50'
                                             placeholder='Email*'
                                             type='email'
                                             name='useremail'
@@ -124,7 +124,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <input
-                                            className='w-full py-4 px-5 border-2 border-solid border-gray-100 rounded-lg mb-4 bg-gray-50'
+                                            className='w-full py-4 px-5 border-2 border-solid border-[#ddd] text-[#333] rounded-lg mb-4 bg-gray-50'
                                             placeholder='Phone*'
                                             type='text'
                                             name='userphone'
@@ -135,7 +135,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <input
-                                            className='w-full py-4 px-5 border-2 border-solid border-gray-100 rounded-lg mb-4 bg-gray-50'
+                                            className='w-full py-4 px-5 border-2 border-solid border-[#ddd] text-[#333] rounded-lg mb-4 bg-gray-50'
                                             placeholder='City*'
                                             type='text'
                                             name='usercity'
@@ -146,7 +146,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <textarea
-                                            className='w-full py-4 px-5 border-2 border-solid border-gray-100 rounded-lg mb-4 resize-none bg-gray-50 h-28'
+                                            className='w-full py-4 px-5 border-2 border-solid border-[#ddd] text-[#333] rounded-lg mb-4 resize-none bg-gray-50 h-28'
                                             placeholder='Message*'
                                             name='usermsg'
                                             value={formData.usermsg}

@@ -38,7 +38,7 @@ const AboutCompo = ({AboutBtn}) => {
         <div className='section'>
             <div className="container">
                 <div className="grid grid-cols-12 place-items-center">
-                    <div className="xl:col-span-6 md:col-span-7 col-span-12">
+                    <div className="xl:col-span-6 md:col-span-7 col-span-12" data-aos="fade-right" data-aosduration="1000" data-aos-delay="200">
                         <div>
                             <div>
                                 <h2 className='mb-5'>Welcome to Dynamic Displays</h2>
@@ -58,7 +58,7 @@ const AboutCompo = ({AboutBtn}) => {
                             {AboutBtn? <button className='circlebtn' onClick={()=>navigate('/about')}>Learn More <GoArrowUpRight  className='circledesign'/></button>: ""}
                         </div>
                     </div>
-                    <div className='xl:col-span-6 md:col-span-5 col-span-12'>
+                    <div className='xl:col-span-6 md:col-span-5 col-span-12' data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                         <img src='./about.webp'/>
                     </div>
                 </div>

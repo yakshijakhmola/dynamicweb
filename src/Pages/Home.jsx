@@ -15,7 +15,7 @@ const Home = () => {
       <div className='section bg-Black'>
         <div className="container">
           <div className="grid grid-cols-12 place-items-center">
-            <div className="xl:col-span-6 col-span-12">
+            <div className="xl:col-span-6 col-span-12" data-aos="fade-right" data-duration="1000" data-aos-delay="100">
               <h1 className="mb-10 xl:leading-[70px] capitalize">
                 Easy, affordable, beautiful{" "}
                 <span className="text-White border-b-4 border-b-solid border-b-White">
@@ -29,7 +29,7 @@ const Home = () => {
               </p>
               <button className="dark_btn mt-5">Start Now</button>
             </div>
-            <div className="xl:col-span-6 col-span-12 mt-5 xl:mt-0">
+            <div className="xl:col-span-6 col-span-12 mt-5 xl:mt-0" data-aos="fade-left" data-duration="1000" data-aos-delay="200">
               <div>
                 <img src={screen1} alt="Screen 1" />
               </div>
@@ -41,7 +41,7 @@ const Home = () => {
       <div className='section bg-[url("./dots.png")] bg-Gray'>
         <div className="container">
           <div className="grid grid-cols-12 place-items-center">
-            <div className="xl:col-span-5 md:col-span-6 col-span-12">
+            <div className="xl:col-span-5 md:col-span-6 col-span-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <div>
                 <h2 className="lefthead">43'Smart Outdoor Signage</h2>
                 <p>
@@ -57,15 +57,15 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="xl:col-span-7 md:col-span-6 col-span-12">
+            <div className="xl:col-span-7 md:col-span-6 col-span-12" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
               <img src={outdoor} alt="Outdoor Signage" />
             </div>
           </div>
           <div className="grid grid-cols-12 place-items-center xl:mt-0 mt-5">
-            <div className="xl:col-span-5 md:col-span-6 col-span-12 order-1 xl:order-none">
+            <div className="xl:col-span-5 md:col-span-6 col-span-12 order-1 xl:order-none" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <img src={screen2} alt="Screen 2" />
             </div>
-            <div className="xl:col-span-7 md:col-span-6 col-span-12">
+            <div className="xl:col-span-7 md:col-span-6 col-span-12" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
               <div>
                 <h2 className="lefthead">
                   Indoor full screen lcd digital signage
