@@ -19,17 +19,20 @@ const Contact = () => {
         {
             id: 1,
             Contact_icon: <FaPhoneVolume />,
-            Contact_para: "+91 9876543210"
+            Contact_para: "+64 212815009",
+            Contact_link: "tel:+64212815009"
         },
         {
             id: 2,
             Contact_icon: <MdMarkEmailUnread />,
-            Contact_para: "info@gmail.com"
+            Contact_para: "Sales@dynamicdisplays.co.nz",
+            Contact_link: "mailto: Sales@dynamicdisplays.co.nz"
         },
         {
             id: 3,
             Contact_icon: <IoLocationSharp />,
-            Contact_para: "Stand Out Screens 6 Findlay Street Ellerslie Auckland 1051"
+            Contact_para: "1 lion court, Upper Hutt, Wellington, New Zealand 5018",
+            Contact_link: "https://maps.app.goo.gl/rrdTizu2fWce5MMe6"
         },
     ];
 
@@ -73,14 +76,14 @@ const Contact = () => {
                 <div className="container">
                     <div className='grid grid-cols-12 gap-x-5'>
                         <div className='xl:col-span-5 md:col-span-5 col-span-12'>
-                            <div className='bg-[url("../gradient-bg.png")] bg-cover bg-no-repeat bg-center py-20 px-10 rounded-lg shadow-DarkShadow h-full'>
+                            <div className='bg-Gray py-20 px-10 rounded-lg shadow-DarkShadow h-full'>
                                 <h4 className='mb-3'>Contact Details</h4>
                                 <p>We're here to help! If you have any questions or would like to discuss how our Outdoor Signage & Indoor Signage services can benefit your business.</p>
                                 <div className='mt-10'>
                                     {ContactJson.map((val) => (
                                         <div className='grid grid-cols-12 my-5' key={val.id}>
-                                            <div className='col-span-2 w-10 h-10 bg-DarkYellow shadow-LightShadow rounded-full text-center flex items-center justify-center text-Black text-xl'>{val.Contact_icon}</div>
-                                            <div className='col-span-10'><a>{val.Contact_para}</a></div>
+                                            <div className='col-span-2 w-10 h-10 bg-Black shadow-LightShadow rounded-full text-center flex items-center justify-center text-White text-xl'>{val.Contact_icon}</div>
+                                            <div className='col-span-10'><a href={val.Contact_link}>{val.Contact_para}</a></div>
                                         </div>
                                     ))}
                                     <div className='flex items-center justify-between mt-10'>
@@ -95,6 +98,7 @@ const Contact = () => {
                         </div>
                         <div className='xl:col-span-7 md:col-span-7 col-span-12'>
                             <div className='bg-white shadow-DarkShadow py-10 px-10 rounded-lg mt-3 xl:mt-0'>
+                            <h3 className='mb-5'>Get In Touch</h3>
                                 <form onSubmit={handleSubmit}>
                                     <div>
                                         <input
@@ -150,7 +154,7 @@ const Contact = () => {
                                             required
                                         />
                                     </div>
-                                    <button className='dark_btn' type='submit' name='submit'>Submit Enquiry</button>
+                                    <button className='bg-transparent text-Black shadow-DarkShadow text-center font-HeadFont rounded-full border border-Black border-solid py-3 px-10 hover:border-transparent hover:bg-Black hover:text-White transition-all duration-700 ease-in-out text-lg' type='submit' name='submit'>Submit Enquiry</button>
                                 </form>
                             </div>
                         </div>

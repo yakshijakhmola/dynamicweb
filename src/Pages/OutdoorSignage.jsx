@@ -62,30 +62,30 @@ const OutdoorSignage = () => {
                     <div className="xl:col-span-7 md:col-span-12 col-span-12">
                         <div>
                             <div>
-                                <p className='text-DarkGreen'><b>43' Smart Outdoor Signage</b></p>
+                                <p className='text-Black'><b>43' Smart Outdoor Signage</b></p>
                                 <h2 className='my-3'>New Second Generation</h2>
                                 <h5>Performance Improvement</h5>
                                 <p className='my-3'>Inheriting the exquisite craftsmanship and advanced special effectsofthisproduct series, the appearance design is more beautiful, thepianopaintismatched with the wire drawing process, the ultra-thin frame, andSevennewcolors are added.</p>
                                 <p><b>Only willing to create a new visual impact for the business.</b></p>
                             </div>
                             <div className='grid grid-cols-12 mt-10'>
-                                <div className='col-span-2 flex items-center justify-center flex-col'>
+                                <div className='col-span-6 mb-5 xl:mb-0 xl:col-span-2 flex items-center justify-center flex-col'>
                                     <img src="./ip65.svg" alt="IP65 24/7 use" className='w-12 mb-3'/>
                                     <p className='text-center'>IP65 24/7 use</p>
                                 </div>
-                                <div className='col-span-2 flex items-center justify-center flex-col'>
+                                <div className='col-span-6 mb-5 xl:mb-0 xl:col-span-2 flex items-center justify-center flex-col'>
                                     <img src="./working-time.svg" alt="IP65 24/7 use" className='w-12 mb-3'/>
                                     <p className='text-center'>10 hours long working time</p>
                                 </div>
-                                <div className='col-span-2 flex items-center justify-center flex-col'>
+                                <div className='col-span-6 mb-5 xl:mb-0 xl:col-span-2 flex items-center justify-center flex-col'>
                                     <img src="./brightness.svg" alt="IP65 24/7 use" className='w-12 mb-3'/>
                                     <p className='text-center'>2500 Nits high brightness</p>
                                 </div>
-                                <div className='col-span-2 flex items-center justify-center flex-col'>
+                                <div className='col-span-6 mb-5 xl:mb-0 xl:col-span-2 flex items-center justify-center flex-col'>
                                     <img src="./protection.svg" alt="IP65 24/7 use" className='w-12 mb-3'/>
                                     <p className='text-center'>Front Protection</p>
                                 </div>
-                                <div className='col-span-2 flex items-center justify-center flex-col'>
+                                <div className='col-span-6 mb-5 xl:mb-0 xl:col-span-2 flex items-center justify-center flex-col'>
                                     <img src="./plug-and-play.svg" alt="IP65 24/7 use" className='w-12 mb-3'/>
                                     <p className='text-center'>Plug and Play</p>
                                 </div>
@@ -98,15 +98,15 @@ const OutdoorSignage = () => {
                 </div>
             </div>
         </div>
-        <div className='section bg-LightYellow'>
+        <div className='section bg-[url("./dots.png")] bg-Black'>
             <div className="centerhead">
-                <h2>Outdoor Benefits</h2>
+                <h2 className='text-White'>Outdoor Benefits</h2>
             </div>
             <div className="container">
                 <div className="flex items-center justify-center w-full gap-x-5 mt-10 flex-wrap">
                     {OutdoorBenefitJson.map((val)=>(
                         <div className="col-span-2" key={val.id}>
-                            <div className='flex items-center justify-center relative z-10 border border-solid border-Black rounded-full py-2 px-3 xl:w-60 xl:h-16 w-60 mb-3 hover:bg-Black hover:text-white outdoorbenefits transition-all duration-200 ease-in hover:shadow-DarkShadow'>
+                            <div className='flex items-center justify-center relative z-10 border border-solid border-Gray rounded-full py-2 px-3 xl:w-72 xl:h-20 w-60 h-20 mb-3 hover:bg-Black hover:text-white outdoorbenefits transition-all duration-200 ease-in hover:shadow-DarkShadow'>
                                 <p className='text-center'>{val.OutdoorBenefitHead}</p>
                             </div>
                         </div>

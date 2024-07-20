@@ -2,27 +2,35 @@ import React from 'react'
 import { GiProgression } from "react-icons/gi";
 import { GoArrowUpRight } from "react-icons/go";
 import { useNavigate } from 'react-router-dom';
-
+import { RiTeamFill } from "react-icons/ri";
+import { IoIosCreate } from "react-icons/io";
+import { GiThink } from "react-icons/gi";
 const AboutCompo = ({AboutBtn}) => {
     const navigate = useNavigate();
     const AboutJSon =[
         {
             id: 1,
-            About_icon: <GiProgression/>,
-            About_head: 'Launch and Scale Your Marketing Campaigns',
-            About_para: 'Dedicated team providing the highest quality of service and results that exceed our clients expectations.'
+            About_icon: <GiThink />,
+            About_head: 'Imagine captivating',
+            About_para: "Imagine captivating your customers and visitors with stunning visuals that bring your brand's message to life. Our innovative digital signage technology does just that, transforming ordinary spaces into extraordinary experiences."
         },
         {
             id: 2,
-            About_icon: <GiProgression/>,
-            About_head: 'Launch and Scale Your Marketing Campaigns',
-            About_para: 'Dedicated team providing the highest quality of service and results that exceed our clients expectations.'
+            About_icon: <IoIosCreate />,
+            About_head: 'Creating and managing',
+            About_para: 'Creating and managing your digital displays has never been easier with our user-friendly platform. Whether you want to promote products, share important information, or simply elevate the atmosphere, our customizable solutions are designed to fit your unique needs.'
         },
         {
             id: 3,
             About_icon: <GiProgression/>,
-            About_head: 'Launch and Scale Your Marketing Campaigns',
-            About_para: 'Dedicated team providing the highest quality of service and results that exceed our clients expectations.'
+            About_head: 'Experienced professionals',
+            About_para: "Our team of experienced professionals is here to guide you every step of the way. From choosing the perfect hardware to designing eye-catching content, we're committed to delivering exceptional service and ensuring your digital signage is a success."
+        },
+        {
+            id: 4,
+            About_icon: <RiTeamFill />,
+            About_head: 'Audience Engagement',
+            About_para: "Ready to take your audience engagement to the next level? Let’s work together to create unforgettable experiences. At Dynamic Displays, we’re excited to help you transform your vision into reality!"
         }
     ]
   return (
@@ -33,13 +41,13 @@ const AboutCompo = ({AboutBtn}) => {
                     <div className="xl:col-span-6 md:col-span-7 col-span-12">
                         <div>
                             <div>
-                                <h2 className='mb-5'>Launch and Scale Your Marketing Campaigns</h2>
-                                <p>Dedicated team providing the highest quality of service and results that exceed our clients' expectations.</p>
+                                <h2 className='mb-5'>Welcome to Dynamic Displays</h2>
+                                <p>Welcome to Dynamic Displays, your go-to digital signage solution in New Zealand! We're here to revolutionize the way you connect with your audience, making every interaction dynamic and engaging.</p>
                             </div>
                             <div className='mt-10'>
                                 {AboutJSon.map((val)=>(
                                     <div className='grid grid-cols-12 items-center mb-10' key={val.id}>
-                                        <div className='xl:col-span-2 md:col-span-2 col-span-12 w-12 h-12 rounded-xl bg-green-100 text-DarkGreen py-1 px-2 flex items-center justify-center text-2xl' >{val.About_icon}</div>
+                                        <div className='xl:col-span-2 md:col-span-2 col-span-12 w-12 h-12 rounded-xl bg-Gray text-Black py-1 px-2 flex items-center justify-center text-2xl' >{val.About_icon}</div>
                                         <div className='xl:col-span-10 md:col-span-10 col-span-12'>
                                             <h6 className='mb-2'>{val.About_head}</h6>
                                             <p>{val.About_para}</p>

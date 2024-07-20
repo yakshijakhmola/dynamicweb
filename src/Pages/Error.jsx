@@ -13,7 +13,7 @@ const Error = () => {
             </div>
             <div className="col-span-7">
               <div>
-                <h6 className='text-DarkGreen'>Oops!!!</h6>
+                <h6 className='text-Black'>Oops!!!</h6>
                 <h2 className='my-5'>Page 404 Not Found</h2>
                 <p className='mb-5'>We're sorry, but the page you are looking for does not exist. It might have been removed, had its name changed, or is temporarily unavailable.</p>
                 <button className='circlebtn' onClick={()=>navigate('/')}>Back to Home <FaArrowRightLong  className='circledesign'/></button>

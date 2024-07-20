@@ -23,13 +23,13 @@ body,html{
   @apply  bg-LightYellow text-Black shadow-DarkShadow text-center font-HeadFont rounded-lg border-2 border-transparent border-solid py-2 px-2 hover:border-black
  }
  .dark_btn{
-  @apply  bg-green-400 text-white shadow-DarkShadow text-center font-HeadFont rounded-lg border-2 border-transparent border-solid py-2 px-2 hover:border-green-400
+  @apply  bg-transparent text-white shadow-DarkShadow text-center font-HeadFont rounded-full border border-Gray border-solid py-3 px-10 hover:border-White hover:bg-white hover:text-Black transition-all duration-700 ease-in-out text-lg
  }
  .section{
   @apply pt-10 pb-10 pl-5 pr-5
  }
  h1{
-  @apply text-7xl text-HeadColor font-semibold font-HeadFont
+  @apply text-7xl text-White font-semibold font-HeadFont
  }
  h2{
   @apply text-5xl text-HeadColor font-HeadFont font-bold
@@ -47,7 +47,7 @@ body,html{
   @apply text-HeadColor font-HeadFont font-bold text-lg
  }
  p{
-  @apply text-ParaColor font-ParaFont text-[15px]
+  @apply text-ParaColor font-ParaFont text-[18px]
  }
  .centerdiv{
   @apply flex items-center justify-center
@@ -59,16 +59,16 @@ body,html{
   @apply text-HeadColor font-HeadFont text-left mb-5
  }
  .circlebtn{
-  @apply flex items-center justify-center gap-x-2 font-HeadFont font-bold capitalize mt-2
+  @apply flex items-center justify-center gap-x-2 font-HeadFont font-bold capitalize mt-2 hover:tracking-wide transition-all duration-700 ease-linear
  }
  .circledesign{
-  @apply w-8 h-8 rounded-full bg-DarkGreen text-center py-2 px-2
+  @apply w-8 h-8 rounded-full bg-Black text-White text-xl shadow-DarkShadow text-center py-2 px-2
  }
 }
 
 @media(max-width: 560px){
   h1{
-    @apply text-3xl text-HeadColor font-semibold font-HeadFont
+    @apply text-3xl text-White font-semibold font-HeadFont
    }
    h2{
     @apply text-2xl text-HeadColor font-HeadFont font-bold

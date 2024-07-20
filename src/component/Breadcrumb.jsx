@@ -3,13 +3,13 @@ import React from 'react'
 const Breadcrumb = ({PageName, PageLink}) => {
   return (
     <>
-    <div className='bg-LightYellow section'>
+    <div className='bg-Black section'>
         <div className="container">
             <h1>{PageName}</h1>
             <ul className='flex items-center gap-x-3'>
-                <li><a>Home</a></li>
-                <li>/</li>
-                <li><a>{PageLink}</a></li>
+                <li><a className='text-Gray'>Home</a></li>
+                <li className='text-White'>/</li>
+                <li><a className='text-White'>{PageLink}</a></li>
             </ul>
         </div>
     </div>

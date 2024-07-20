@@ -12,13 +12,13 @@ const Home = () => {
 
   return (
     <>
-      <div className='section bg-[url("../gradient-bg.png")] bg-cover bg-no-repeat bg-center'>
+      <div className='section bg-Black'>
         <div className="container">
           <div className="grid grid-cols-12 place-items-center">
             <div className="xl:col-span-6 col-span-12">
               <h1 className="mb-10 xl:leading-[70px] capitalize">
                 Easy, affordable, beautiful{" "}
-                <span className="text-green-400 border-b-4 border-b-solid border-b-DarkGreen">
+                <span className="text-White border-b-4 border-b-solid border-b-White">
                   digital signage
                 </span>
               </h1>
@@ -29,7 +29,7 @@ const Home = () => {
               </p>
               <button className="dark_btn mt-5">Start Now</button>
             </div>
-            <div className="xl:col-span-6 col-span-12">
+            <div className="xl:col-span-6 col-span-12 mt-5 xl:mt-0">
               <div>
                 <img src={screen1} alt="Screen 1" />
               </div>
@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </div>
       <AboutCompo AboutBtn={true} />
-      <div className='section bg-[url("../gradient-bg.png")] bg-cover bg-no-repeat bg-center'>
+      <div className='section bg-[url("./dots.png")] bg-Gray'>
         <div className="container">
           <div className="grid grid-cols-12 place-items-center">
             <div className="xl:col-span-5 md:col-span-6 col-span-12">
@@ -68,7 +68,7 @@ const Home = () => {
             <div className="xl:col-span-7 md:col-span-6 col-span-12">
               <div>
                 <h2 className="lefthead">
-                  Indoor double side full screen lcd digital signage
+                  Indoor full screen lcd digital signage
                 </h2>
                 <p>
                   The Indoor Double-Sided Full-Screen LCD Digital Signage is a
